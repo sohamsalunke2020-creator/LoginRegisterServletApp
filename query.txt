@@ -1,0 +1,9 @@
+CREATE TABLE users (name VARCHAR(100) PRIMARY KEY, 
+                    email VARCHAR(150) NOT NULL UNIQUE, 
+                    mobile VARCHAR(15), 
+                    addr TEXT, 
+                    password VARCHAR(255) NOT NULL
+                    );
+INSERT INTO users (name, email, mobile, addr, password) VALUES ('John Doe', 'john@example.com', '9876543210', 'New York', 'pass123');
+INSERT INTO users (name, email, mobile, addr, password) VALUES ('Alice Smith', 'alice@example.com', '9123456780', 'California', 'alice@123');
+INSERT INTO users (name, email, mobile, addr, password) VALUES ('Bob Brown', 'bob@example.com', '9988776655', 'Texas', 'bob@456');
