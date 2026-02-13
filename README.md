@@ -9,15 +9,15 @@ A Java web application that provides **User Login, Registration, and Forgot Pass
 - User Login  
 - Forgot Password  
 - Form validation with success/error messages  
-- Show/Hide password feature  
-- Responsive UI  
+- Show/Hide password (eye icon)  
+- Responsive UI (mobile friendly)  
 - Dark mode support  
 - Background images  
 - Secure database connectivity using JDBC  
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠 Technologies Used
 - Java (Servlets)
 - HTML, CSS
 - Apache Tomcat 11
@@ -27,12 +27,24 @@ A Java web application that provides **User Login, Registration, and Forgot Pass
 ---
 
 ## 📂 Project Structure
+
 UserApp/
 │── css/
+│ └── style.css
+│
 │── images/
+│ └── bg.jpg
+│
 │── WEB-INF/
 │ ├── classes/
+│ │ ├── LoginServlet.java
+│ │ ├── RegisterServlet.java
+│ │ ├── WelcomeServlet.java
+│ │ └── DBUtils.java
+│ │
 │ └── lib/
+│ └── postgresql.jar
+│
 │── login.html
 │── register.html
 │── forgot.html
