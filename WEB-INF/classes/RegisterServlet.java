@@ -50,6 +50,7 @@ public class RegisterServlet extends HttpServlet{
             rd.include(request, response);
 
         }catch(Exception e){
-            e.printStackTrace();        }
+            e.printStackTrace();        
+        }
     }
 }
