@@ -69,6 +69,19 @@ input:focus {
     position: relative;
 }
 
+.password-msg{
+    color: white;                   /* text color */
+    background-color: rgba(0, 128, 0, 0.8); /* semi-transparent green background */
+    font-size: 22px;                /* bigger text */
+    font-weight: bold;              /* makes it stand out */
+    padding: 8px 12px;              /* space around the text */
+    border-radius: 5px;             /* rounded corners */
+    display: inline-block;
+    margin-top: 10px;
+}
+
+
+
 .eye {
     position: absolute;
     right: 10px;
@@ -116,9 +129,17 @@ a {
 }
 
 .success {
-    color: green;
+    color: white;           /* high contrast */
+    background-color: green; /* optional, makes it pop */
+    font-size: 20px;         /* bigger text */
+    font-weight: bold;       /* easier to read */
+    padding: 5px 10px;       /* some spacing around the text */
+    border-radius: 5px;      /* rounded corners for style */
+    display: inline-block;    /* prevents stretching across form */
     margin-top: 10px;
 }
+
+
 
 /* Dark mode toggle */
 .toggle {
@@ -175,5 +196,15 @@ a {
     font-size: 20px;
     font-weight: bold;
     color: #4da3ff;
+}
+.invalid-user{
+    color: white;                   /* text color */
+    background-color: rgba(0, 128, 0, 0.8); /* semi-transparent green background */
+    font-size: 22px;                /* bigger text */
+    font-weight: bold;              /* makes it stand out */
+    padding: 8px 12px;              /* space around the text */
+    border-radius: 5px;             /* rounded corners */
+    display: inline-block;
+    margin-top: 10px;
 }
 
