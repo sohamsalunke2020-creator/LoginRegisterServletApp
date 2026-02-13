@@ -1,0 +1,14 @@
+# Ignore compiled class files
+WEB-INF/classes/*.class
+
+# Ignore libraries
+WEB-INF/lib/*.jar
+
+# Ignore Tomcat temp files
+work/
+logs/
+temp/
+
+# OS files
+.DS_Store
+Thumbs.db

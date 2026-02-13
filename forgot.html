@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- <h1>Fetch Password</h1> -->
-    <form action="forgot" method="post">
-        Enter Username : <input type="text" name="usr"><br><br>
-        Enter Email-Id : <input type="email" name="email"><br><br>
-        <input type="submit" value="GET YOUR PASSWORD">
-        <input type="reset" value="CLEAR">
-    </form>
-    <br>
-    <!-- <a href="login.html">LOGIN AGAIN</a> -->
+    <div class="container">
+        <h1>Forgot Password</h1>
+        <form action="forgot" method="post">
+            Username:
+            <input type="text" name="usr" required>
+
+            Email-Id:
+            <input type="email" name="email" required>
+
+            <input type="submit" value="GET PASSWORD">
+            <input type="reset" value="CLEAR">
+        </form>
+
+        <a href="login.html">Login Again</a>
+    </div>
 </body>
 </html>

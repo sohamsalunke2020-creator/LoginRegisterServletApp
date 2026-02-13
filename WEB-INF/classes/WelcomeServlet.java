@@ -9,9 +9,9 @@ public class WelcomeServlet extends HttpServlet{
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException,IOException{
 
         PrintWriter out = response.getWriter();
-        response.setContentType("htm/text");
+        response.setContentType("text/html");
 
-        String usr = request.getParameter("uname");
+        String usr = (String)request.getAttribute("uname");
         String email = (String)request.getAttribute("email");
         String mobile = (String)request.getAttribute("mobile");
         String addr = (String)request.getAttribute("addr");

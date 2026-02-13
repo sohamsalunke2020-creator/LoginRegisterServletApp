@@ -37,7 +37,8 @@ public class LoginServlet extends HttpServlet{
                 rd.forward(request, response);
             }
 
-            out.println("<p>Invalid Credentials</p>");
+            out.println("<div class='error'>Invalid username or password</div>");
+
             rd = request.getRequestDispatcher("login.html");
             rd.include(request, response);
             

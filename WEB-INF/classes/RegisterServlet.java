@@ -45,7 +45,7 @@ public class RegisterServlet extends HttpServlet{
             psInsert.setString(5,pass);
 
             psInsert.executeUpdate();
-            out.println("<p>Registration Successful. Login Again</p>");
+            out.println("<div class='success'>Registration successful</div>");
             RequestDispatcher rd = request.getRequestDispatcher("login.html");
             rd.include(request, response);
 
