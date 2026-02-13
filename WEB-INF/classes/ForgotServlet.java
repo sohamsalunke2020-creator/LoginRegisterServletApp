@@ -28,11 +28,10 @@ public class ForgotServlet extends HttpServlet{
             rs = psSelect.executeQuery();
 
             if(rs.next()){
-                out.println("<p>YOUR PASSWORD : "+rs.getString(1)+"</p>");
-            }else{
-                out.println("<p>Invalid User</p>");
+              out.println("<div class='password-msg'>YOUR PASSWORD: " + rs.getString(1) + "</div>");
             }
-
+            
+            out.println("<div class='invalid-user'>INVALID USER </div>");
             RequestDispatcher rd = request.getRequestDispatcher("forgot.html");
             rd.include(request, response);
             
