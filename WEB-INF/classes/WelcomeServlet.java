@@ -11,7 +11,7 @@ public class WelcomeServlet extends HttpServlet {
             throws ServletException, IOException {
 
         PrintWriter out = response.getWriter();
-        response.setContentType("text/html");  // ✅ FIX
+        response.setContentType("text/html"); 
 
         String email = (String) request.getAttribute("email");
         String mobile = (String) request.getAttribute("mobile");
